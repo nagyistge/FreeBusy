@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:focusable="false" >
+
+        <TextView
+            android:id="@+id/college_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/professor_name"
+            android:layout_below="@+id/professor_name"
+            android:text="CCS"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/consult_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/professor_image"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@+id/professor_image"
+            android:clickable="true"
+            android:src="@drawable/consult_button" />
+
+        <ImageView
+            android:id="@+id/schedule_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/consult_button"
+            android:layout_toRightOf="@+id/consult_button"
+            android:clickable="true"
+            android:src="@drawable/schedule_button" />
+
+        <ImageView
+            android:id="@+id/toggle_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/professor_name"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/green_toggle" />
+
+        <ImageView
+            android:id="@+id/professor_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/toggle_image"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/professor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/consult_button"
+            android:layout_alignParentTop="true"
+            android:text="Jeffrey Dy"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+</LinearLayout>
